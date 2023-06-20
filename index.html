@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit:portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7908e7441b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <!-- navigation bar -->
+            <nav>
+                <img src="Image/H.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certificates</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Harshit</span><br> Yadav from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About  -->
+
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/user_photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello, I'm Harshit Yadav, a Btech student actively seeking software development jobs. With a
+                        strong background in programming languages like C++, Java and Python I have a solid foundation
+                        in software development principles and algorithms. I enjoy tackling complex problems and finding
+                        efficient solutions through code. Through my coursework and personal projects, I've gained
+                        experience in web development, database management, and software testing. I'm a fast learner,
+                        adaptable, and always eager to expand my knowledge and skills. As a dedicated and
+                        detail-oriented individual, I'm committed to delivering high-quality software solutions and
+                        continuously improving as a developer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Progamming Languages</span><br>C++, Java, Python, C</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Javascript</li>
+                            <li><span>Software Development Tools</span><br>Visual Studio Code, Atom
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>Bachelor of Technology(BTech) <br>Major - Electronics and
+                                Communication Enginnering <br>Minor - Computer Science Engineering</li>
+                            <li><span>2019 - 2020</span><br>Class XII <br>Aggregate-89.3%</li>
+                            <li><span>2018 - 2019</span><br>Class X <br>Aggregate-79.5%</li>
+                        </ul>
+                    </div>
+                    <a href="Image/HARSHIT YADAV resume latest.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio2 -->
+
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/flavourHunt.jpg" alt="">
+                    <div class="layer">
+                        <h3>FlavourHunt</h3>
+                        <p>I created a web application that leverages the Edamam Food API to find recipes for any dish and
+                            provides detailed nutritional information, including calorie tracking. The project aimed to assist users
+                            in making informed dietary choices by providing easy access to recipes and their corresponding
+                            calorie conten.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/faceRec.jpg" alt="">
+                    <div class="layer">
+                        <h3>Face recognition app</h3>
+                        <p>Designed and implemented a face recognition attendance system using OpenCV-Python, a popular
+                            computer vision library, for efficient and automated attendance management in a large
+                            organization.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/contact.jpg" alt="">
+                    <div class="layer">
+                        <h3>Contacts managment system</h3>
+                        <p>Developed a contact managment system using C++ in which user can upload its personal contacts and manage them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#" class="btn">See More</a> -->
+
+        </div>
+    </div>
+
+    <!-- certificates  -->
+
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+
+                <div>
+                    <h2>Blockchain-Business application and Analysis</h2>
+                    <a href="Image/coursera_FutureThinking.pdf" download><i class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div>
+                    <h2>Big Data-Modelling, Integration and Processing</h2>
+                    <a href="Image/Coursera_BD_Inti_Pros.pdf" download><i class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div>
+                    <h2>Big Data Modelling and Management Systems</h2>
+                    <a href="Image/Coursera_BD_modelAndmanagment.pdf" download><i class="fa-solid fa-download"></i></a>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+    <!-- ---------------Portofolio---------- -->
+
+    <!-- <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/flipkart-clone-application-1.png" alt="">
+                    <div class="layer">
+                        <h3>Flipkart Clone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/faceRec.jpg" alt="">
+                    <div class="layer">
+                        <h3>Face recognition app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/phonebook-management-system.png" alt="">
+                    <div class="layer">
+                        <h3>Contacts managment system</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div> -->
+
+    <!-- ----------------CONTACT------------ -->
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="" sub-title>Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>harshityadavnr@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8077919385</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/harshit-yadav-1b6104231/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Harshit0775"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/__harshit_yadav__?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Image/HARSHIT YADAV resume latest.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Harshit_Yadav</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby87NuiI4eT-kxlFtFsk6VqDvx1sc16Yf6zj5l1HkO-MTwXELjUgmhkOg1LYUmHq8sz/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+
+                    form.reset();
+
+                    
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
